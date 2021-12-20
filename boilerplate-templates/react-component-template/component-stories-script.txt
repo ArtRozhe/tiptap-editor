@@ -1,0 +1,29 @@
+import { number } from '@storybook/addon-knobs';
+import React from 'react';
+import {{ComponentNamePascalCase}} from './{{ComponentNamePascalCase}}';
+
+export default {
+  title: '{{storyType}}/{{ComponentNamePascalCase}}',
+};
+
+export const Default = (): JSX.Element => (
+  <div
+    style={{
+      border: '1px dotted rgba(0,0,0,.2)',
+      width: number('Container width', 350, {
+        range: true,
+        min: 100,
+        max: 600,
+        step: 50,
+      }),
+      height: number('Container height', 150, {
+        range: true,
+        min: 80,
+        max: 250,
+        step: 10,
+      }),
+    }}
+  >
+    <{{ComponentNamePascalCase}} />
+  </div>
+);
