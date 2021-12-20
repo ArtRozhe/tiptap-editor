@@ -1,0 +1,3 @@
+import {{ExtensionNamePascalCase}} from '@tiptap/extension-{{ExtensionNameKebabCase}}';
+
+export default {{ExtensionNamePascalCase}};

@@ -3,9 +3,9 @@
  * Second argument - component name (PascalCase)
  *
  * Examples:
- * node create.js atom SomeAtom
- * node create.js molecule SomeMolecule
- * node create.js organism SomeOrganism
+ * node create-component.js atom SomeAtom
+ * node create-component.js molecule SomeMolecule
+ * node create-component.js organism SomeOrganism
  */
 
 const path = require('path');

@@ -1,9 +1,8 @@
 import { FC } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
-import Document from '@tiptap/extension-document';
-import Paragraph from '@tiptap/extension-paragraph';
-import Text from '@tiptap/extension-text';
 
+import { BubbleMenu, FloatingMenu } from './components';
+import extensions from './extensions';
 import useStyles from './ArticleEditor.styles';
 
 export interface IArticleEditorProps {
@@ -13,12 +12,14 @@ export interface IArticleEditorProps {
 const ArticleEditor: FC<IArticleEditorProps> = ({ dataCy }) => {
   const classes = useStyles();
   const editor = useEditor({
-    extensions: [Document, Paragraph, Text],
-    content: '<p>Редактор статей</p>',
+    extensions,
+    content: '',
   });
 
   return (
     <div className={classes.organismArticleEditor} data-cy={dataCy}>
+      {editor && <BubbleMenu editor={editor} />}
+      {editor && <FloatingMenu editor={editor} />}
       <EditorContent editor={editor} />
     </div>
   );

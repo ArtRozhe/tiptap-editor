@@ -1,0 +1,2 @@
+export { default as {{ExtensionNamePascalCase}} } from './{{ExtensionNamePascalCase}}';
+export * from './{{ExtensionNamePascalCase}}';
