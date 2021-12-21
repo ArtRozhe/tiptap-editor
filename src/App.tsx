@@ -6,7 +6,7 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.app}>
-      <div>Приложение для разработки редактора статей</div>
+      <div>Редактор статей</div>
       <ArticleEditor />
     </div>
   );

@@ -3,6 +3,7 @@ import { useEditor, EditorContent } from '@tiptap/react';
 
 import { FormatSelectionMenu, InsertNodeMenu } from './components';
 import extensions from './extensions';
+import { simpleArticle } from './mock';
 import useStyles from './ArticleEditor.styles';
 
 export interface IArticleEditorProps {
@@ -13,7 +14,10 @@ const ArticleEditor: FC<IArticleEditorProps> = ({ dataCy }) => {
   const classes = useStyles();
   const editor = useEditor({
     extensions,
-    content: '',
+    content: simpleArticle,
+    onUpdate: ({ editor }) => {
+      console.log(editor.getHTML());
+    },
   });
 
   return (
