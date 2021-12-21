@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { HIGHLIGHT_COLOR } from './constants';
 
 export default createUseStyles({
-  bubbleMenu: {
+  formatSelectionMenu: {
     display: 'flex',
   },
 

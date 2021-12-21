@@ -1,2 +1,2 @@
-export * from './BubbleMenu';
-export * from './FloatingMenu';
+export * from './FormatSelectionMenu';
+export * from './InsertNodeMenu';

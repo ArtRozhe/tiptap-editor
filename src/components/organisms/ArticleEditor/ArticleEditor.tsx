@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 
-import { BubbleMenu, FloatingMenu } from './components';
+import { FormatSelectionMenu, InsertNodeMenu } from './components';
 import extensions from './extensions';
 import useStyles from './ArticleEditor.styles';
 
@@ -18,8 +18,8 @@ const ArticleEditor: FC<IArticleEditorProps> = ({ dataCy }) => {
 
   return (
     <div className={classes.organismArticleEditor} data-cy={dataCy}>
-      {editor && <BubbleMenu editor={editor} />}
-      {editor && <FloatingMenu editor={editor} />}
+      {editor && <FormatSelectionMenu editor={editor} />}
+      {editor && <InsertNodeMenu editor={editor} />}
       <EditorContent editor={editor} />
     </div>
   );

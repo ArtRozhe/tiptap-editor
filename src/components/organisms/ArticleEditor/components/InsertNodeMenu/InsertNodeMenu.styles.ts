@@ -1,7 +1,7 @@
 import { createUseStyles } from 'react-jss';
 
 export default createUseStyles({
-  floatingMenu: {},
+  insertNodeMenu: {},
 
   button: {
     margin: 0,
