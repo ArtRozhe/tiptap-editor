@@ -1,14 +1,14 @@
 import { Extensions } from '@tiptap/react';
+import Document from '@tiptap/extension-document';
+import Paragraph from '@tiptap/extension-paragraph';
+import Text from '@tiptap/extension-text';
+import Blockquote from '@tiptap/extension-blockquote';
+import BulletList from '@tiptap/extension-bullet-list';
+import ListItem from '@tiptap/extension-list-item';
+import HardBreak from '@tiptap/extension-hard-break';
+import Heading from '@tiptap/extension-heading';
+import HorizontalRule from '@tiptap/extension-horizontal-rule';
 
-import { Document } from './Document';
-import { Paragraph } from './Paragraph';
-import { Text } from './Text';
-import { Blockquote } from './Blockquote';
-import { BulletList } from './BulletList';
-import { ListItem } from './ListItem';
-import { HardBreak } from './HardBreak';
-import { Heading } from './Heading';
-import { HorizontalRule } from './HorizontalRule';
 import { Table } from './Table';
 import { TableHeader } from './TableHeader';
 import { TableRow } from './TableRow';

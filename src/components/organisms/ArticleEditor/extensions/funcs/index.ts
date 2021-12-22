@@ -1,9 +1,9 @@
 import { Extensions } from '@tiptap/react';
+import BubbleMenu from '@tiptap/extension-bubble-menu';
+import Gapcursor from '@tiptap/extension-gapcursor';
+import History from '@tiptap/extension-history';
 
-import { BubbleMenu } from './BubbleMenu';
-import { History } from './History';
 import { Placeholder } from './Placeholder';
-import { Gapcursor } from './Gapcursor';
 
 const FuncsExtensions: Extensions = [
   BubbleMenu,

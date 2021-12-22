@@ -16,7 +16,7 @@ const ArticleEditor: FC<IArticleEditorProps> = ({ dataCy }) => {
     extensions,
     content: simpleArticle,
     onUpdate: ({ editor }) => {
-      console.log(editor.getHTML());
+      console.log(editor.getJSON());
     },
   });
 

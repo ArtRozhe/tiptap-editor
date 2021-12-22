@@ -1,9 +1,9 @@
 import { Extensions } from '@tiptap/react';
+import Bold from '@tiptap/extension-bold';
+import Italic from '@tiptap/extension-italic';
+import Strike from '@tiptap/extension-strike';
+import Underline from '@tiptap/extension-underline';
 
-import { Bold } from './Bold';
-import { Italic } from './Italic';
-import { Strike } from './Strike';
-import { Underline } from './Underline';
 import { Highlight } from './Highlight';
 
 const MarksExtensions: Extensions = [
